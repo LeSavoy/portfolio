@@ -433,22 +433,23 @@ main div {
 .projects__cards {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .project__card-1,
 .project__card-2,
 .project__card-3 {
-  border: 1px solid black;
-  border-radius: .3rem;
+  border: 2px solid black;
+  border-radius: 0.3rem;
   width: 350px;
-  height: 370px;
+  height: 360px;
+  background-color: #fff;
 }
 
 .project__card-1 p,
 .project__card-2 p,
 .project__card-3 p {
-  padding: 5px 10px 0;
+  padding: 10px 10px 0;
+  color: #464646;
 }
 
 .project__card-2 {
@@ -456,18 +457,34 @@ main div {
 }
 
 .projects__cards img {
-  object-fit: cover;
-  width: 350px;
-  height: 200px;
-
+  object-fit: contain;
+  width: 346px;
+  height: 160px;
 }
 
 .technologies {
   width: 110px;
   height: 30px;
-  background-color: #cacaca;
-  border-radius: .3rem;
   font-weight: 700;
-  text-align: center;
-  margin: 30px 0 0 10px;
+  border: 2px solid #0061ff;
+  color: #fff;
+  border-radius: 0.2rem;
+  background-color: #0061ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0 10px;
+}
+
+.technologies__images img {
+  width: 48px;
+  height: 48px;
+  margin: 15px 0 0 10px;
+}
+
+.project__card-1 a > img:hover,
+.project__card-2 a > img:hover,
+.project__card-3 a > img:hover {
+  opacity: .3;
 }
