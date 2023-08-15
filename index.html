@@ -19,14 +19,15 @@
 
       <div>
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
         </ul>
       </div>
 
       <div>
-        <input class="button" type="button" value="Contate-me" />
+        <a href="#footer"><input class="button" type="button" value="Contate-me" /></a>
+
       </div>
     </nav>
   </header>
@@ -48,7 +49,7 @@
     </div>
   </main>
 
-  <section>
+  <section id="about-me">
     <img class="little__images image-6" src="assets/img/github.png" alt="" />
     <img class="little__images image-7" src="assets/img/html-5.png" alt="" />
     <img class="little__images image-8" src="assets/img/js.png" alt="" />
@@ -57,7 +58,7 @@
         <img src="assets/img/aboutme-image.png" alt="dev image" />
       </div>
 
-      <div class="about__me-informations">
+      <div class="about__me-informations" >
         <h2>Sobre mim</h2>
         <p>Formado em Análise e Desenvolvimento de Sistemas. Sou um entusiasta da tecnologia apaixonado por criar
           soluções criativas através da programação. Com um background em desenvolvimento web e muita vontade de
@@ -68,10 +69,10 @@
           <div class="informations__left">
             <span><span class="span__text">Nome: </span><span class="span__informations">Mateus Santos de
                 Souza</span></span>
-            <span><span class="span__text">Telefone: </span><span class="span__informations">19971257487</span></span>
-            <span><span class="span__text">E-mail: </span> <span
-                class="span__informations">mateustechdev@hotmail.com</span></span>
-            <span><span class="span__text">Idade: </span> <span class="span__informations">23</span></span>
+                <span><span class="span__text">Idade: </span> <span class="span__informations">23</span></span>
+            <span><span class="span__text">Objetivo: </span><span class="span__informations">Desenvolvedor FullStack</span></span>
+            <span><span class="span__text">Interesse: </span> <span
+                class="span__informations">Desenvolvimento mobile</span></span>
           </div>
 
           <div class="informations__right">
@@ -81,7 +82,6 @@
                 class='bx bx-link'></i></span>
             <span><span class="span__text">Github: </span> <a href="https://github.com/lesavoy"
                 target="_blank">Link</a><i class='bx bx-link'></i></span>
-            <!-- <span></span> -->
           </div>
 
         </div>
@@ -105,6 +105,11 @@
   </div>
 
   <section>
+    <div class="skills__title" id="skills">
+      <h4>Skills</h4>
+    </div>
+
+
     <div class="skills">
       <div class="skills__button">
         <input type="button" id="skills__button-1" value="Principais habilidades" />
@@ -172,11 +177,16 @@
     <img src="assets/img/breaket.png" alt="" />
   </div>
 
-  <section class="projects">
+  <section class="projects" id="projects">
+    <div class="projects__title">
+      <h4>Projetos</h4>
+    </div>
+
     <div class="projects__cards">
       <div class="project__card-1">
         <div class="project__card-link">
-          <a href=""><img src="assets/img/project-1.png" alt="" /></a>
+          <a href="https://my-design-page.netlify.app/" target="_blank"><img class="project__image"
+              src="assets/img/project-1.png" alt="" /></a>
         </div>
         <hr />
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nobis.</p>
@@ -184,32 +194,68 @@
         <div class="technologies__images">
           <img src="assets/img/next-black.png" alt="" />
           <img src="assets/img/tailwind.png" alt="" />
+          <img src="assets/img/typescript.png" alt="" />
         </div>
       </div>
 
       <div class="project__card-2">
-        <a href="" class=""><img  src="assets/img/project-1.png" alt="" /></a>
+        <div class="project__card-link">
+          <a href="https://real-time-cryptocurrency-price.netlify.app/" target="_blank"><img class="project__image"
+              src="assets/img/project-2.png" alt="" /></a>
+        </div>
 
         <hr />
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nobis.</p>
         <div class="technologies">Tecnologias</div>
         <div class="technologies__images">
-          <img src="assets/img/next-black.png" alt="" />
-          <img src="assets/img/tailwind.png" alt="" />
+          <img src="assets/img/html-5.png" alt="" />
+          <img src="assets/img/css-3.png" alt="" />
+          <img src="assets/img/js.png" alt="" />
         </div>
       </div>
 
       <div class="project__card-3">
-        <a href="" class="project__card-link"><img src="assets/img/project-1.png" alt="" /></a>
+        <div class="project__card-link">
+          <a href="https://simples-landing-page-responsive.netlify.app/" target="_blank"><img class="project__image"
+              src="assets/img/project-3.png" alt="" /></a>
+        </div>
         <hr />
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nobis.</p>
         <div class="technologies">Tecnologias</div>
         <div class="technologies__images">
-          <img src="assets/img/next-black.png" alt="" />
-          <img src="assets/img/tailwind.png" alt="" />
+          <img src="assets/img/html-5.png" alt="" />
+          <img src="assets/img/css-3.png" alt="" />
         </div>
       </div>
   </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__content">
+      <div class="logo__container">
+        <img src="assets/img/deviantart.svg" alt="Logo">
+        <h4 class="logo__text">Developer</h4>
+      </div>
+
+      <div class="footer__column">
+        <h6 class="column__title">Contate-me</h6>
+        <p>mateustechdev@hotmail.com</p>
+        <p>(19)971257487</p>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <div class="footer__bottom">
+      <p>&copy; 2023 Mateus S. inc. All righs reserved.</p>
+      <div class="social__icons">
+        <a href="https://www.linkedin.com/in/mateus-santos-1a0b85180/" target="_blank"><img
+            src="assets/img/linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/lesavoy" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
+        <a href="#" target="_blank"><img src="/assets/img/instagram.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js"></script>
 </body>

@@ -65,8 +65,7 @@ li a {
 }
 
 li a:hover {
-  color: #1b1b1b;
-  font-weight: 600;
+  color: #000000;
 }
 
 .logo {
@@ -92,6 +91,12 @@ li a:hover {
   border-radius: 0.2rem;
   background-color: #0061ff;
   cursor: pointer;
+  transition: ease-in .2s;
+}
+
+.button:hover {
+  background-color: #0044b1;
+  border-color: #0044b1;
 }
 
 /* ======================= MAIN SECTION ======================= */
@@ -196,6 +201,8 @@ main div {
   margin-top: 30%;
 }
 
+/* ======================= ABOUT ME ======================= */
+
 .about__me {
   display: flex;
   margin-top: 15rem;
@@ -208,8 +215,6 @@ main div {
   margin-right: 4rem;
   margin-left: 7rem;
 }
-
-/* ======================= ABOUT ME ======================= */
 
 .informations {
   display: flex;
@@ -252,6 +257,23 @@ main div {
   color: #000;
 }
 
+.button__download input {
+  width: 120px;
+  height: 30px;
+  font-weight: 700;
+  border: 2px solid #0061ff;
+  color: #fff;
+  border-radius: 0.2rem;
+  background-color: #0061ff;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.button__download input:hover {
+  background-color: #0044b1;
+  border-color: #0044b1;
+}
+
 /* ======================= TRANSITION ======================= */
 
 .transition {
@@ -273,15 +295,13 @@ main div {
 
 /* ======================= SKILLS ======================= */
 
-.button__download input {
-  width: 120px;
-  height: 30px;
+.skills__title {
   font-weight: 700;
-  border: 2px solid #0061ff;
-  color: #fff;
-  border-radius: 0.2rem;
-  background-color: #0061ff;
-  cursor: pointer;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: -2rem;
+  margin-top: 10rem;
 }
 
 .span__text {
@@ -332,12 +352,24 @@ main div {
 #skills__button-1 {
   background-color: #0061ff;
   border: 2px solid #0061ff;
+  transition: .2s ease-in;
+}
+
+#skills__button-1:hover {
+  background-color: #0044b1;
+  border-color: #0044b1;
 }
 
 #skills__button-2 {
   background-color: #000;
   border: 2px solid #000;
   color: #fff;
+  transition: .2s ease-in;
+}
+
+#skills__button-2:hover {
+  background-color: #303030;
+  border-color: #303030;
 }
 
 .cards {
@@ -424,8 +456,17 @@ main div {
 
 /* ======================= PROJECTS ======================= */
 
+.projects__title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: -2rem;
+}
+
 .projects {
-  height: 900px;
+  height: 675px;
   width: 100%;
   margin-top: 12rem;
 }
@@ -458,14 +499,19 @@ main div {
 
 .projects__cards img {
   object-fit: contain;
-  width: 346px;
-  height: 160px;
+  width: 345.5px;
+  height: 170px;
+}
+
+.project__card-link img {
+  height: 100%;
+  margin-bottom: -7px;
 }
 
 .technologies {
   width: 110px;
-  height: 30px;
-  font-weight: 700;
+  height: 25px;
+  font-weight: 500;
   border: 2px solid #0061ff;
   color: #fff;
   border-radius: 0.2rem;
@@ -486,5 +532,92 @@ main div {
 .project__card-1 a > img:hover,
 .project__card-2 a > img:hover,
 .project__card-3 a > img:hover {
-  opacity: .3;
+  opacity: 0.3;
 }
+
+/* ======================= PROJECTS ======================= */
+
+.footer {
+  height: 360px;
+  padding: 1rem 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  margin-right: 400px;
+}
+
+.logo__container img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.logo__text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 16rem;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.column__title {
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.divider {
+  margin: 1rem auto;
+  width: 80%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.footer__bottom p {
+  margin-left: 9rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.social__icons {
+  margin-right: 17rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.social__icons a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.social__icons a:last-child img {
+  margin-right: 0;
+}
+
+/* ======================= RESPONSIVE ======================= */
+
