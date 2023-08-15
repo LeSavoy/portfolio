@@ -621,3 +621,138 @@ main div {
 
 /* ======================= RESPONSIVE ======================= */
 
+@media screen and (max-width: 375px) {
+  li a {
+    display: none;
+  }
+
+  .logo {
+    width: 20px;
+    margin-left: 1rem;
+  }
+
+  .button {
+    margin-right: 1rem;
+  }
+
+  .image-4 {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .about__me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__me h2 {
+    text-align: center;
+  }
+
+  .about__me p {
+    width: 270px;
+    text-align: center;
+  }
+
+  .dev__image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+  }
+
+  .informations {
+    display: none;
+  }
+
+  .button__download {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .skills__title {
+    margin-top: 4rem;
+  }
+
+  .skills {
+    height: 1400px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__1,
+  .card__2,
+  .card__3,
+  .card__4,
+  .card__5,
+  .card__6 {
+    width: 290px;
+  }
+
+  #skills__button-1,
+  #skills__button-2 {
+    width: 140px;
+    font-size: .7rem;
+  }
+
+  .projects {
+    height: 1400px;
+  }
+
+  .project__card-1,
+  .project__card-2,
+  .project__card-3 {
+    width: 290px;
+  }
+
+  .project__card-2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .projects__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project__image {
+    max-width: 286px;
+  }
+
+  .logo__container {
+    display: none;
+  }
+
+  .footer__column {
+    margin-right: 16rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__bottom p {
+    width: 200px;
+    flex-direction: row;
+    padding-right: 8rem;
+  }
+
+  .social__icons {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 6rem;
+  }
+
+  .social__icons a img {
+    display: flex;
+    margin-bottom: 2px;
+  }
+}
