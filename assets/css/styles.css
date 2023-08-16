@@ -621,7 +621,7 @@ main div {
 
 /* ======================= RESPONSIVE ======================= */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   li a {
     display: none;
   }
